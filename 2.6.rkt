@@ -48,7 +48,7 @@ procedure + (not in terms of repeated application of add-1). |#
   (lambda (f) (lambda (x) (f (f x)))))
 
 ;; We know we must compose the functions, so work backwards
-;; (f_m (f_m..(f_m x)..))) with m+n f's
+;; (f_m (f_m..(f_m (f_n..(f_n x)..)))..))) with m+n f's
 ;; (m f) will result in a procedure will all the m f's
 ;; then its argument x_m must be all the n f's=> (f_n (f_n..(f_n x)..))
 ;; so x_m = ((n f) x)
