@@ -18,6 +18,6 @@ What result is printed by the interpreter in response to evaluating each of the 
 
 (display (append x y)) ; (1 2 3 4 5 6)
 (newline)
-(display (cons x y)) ; ((1 2 3) (4 5 6))
+(display (cons x y)) ; ((1 2 3) 4 5 6)
 (newline)
 (display (list x y)) ; ((1 2 3) (4 5 6))
